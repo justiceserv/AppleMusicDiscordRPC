@@ -1,6 +1,7 @@
 const iTunes = require('itunes-bridge');
 const RPC = require('discord-rpc')
 const { searchSong } = require('@tbogard/itunes-search');
+const genre = require('./getGenreAsset')
 const iTunesEmitter = iTunes.emitter;
 let client = new RPC.Client({ transport: 'ipc' })
 client.login({ clientId: '891586647790075964' }).catch(console.error);
@@ -25,7 +26,7 @@ iTunesEmitter.on('playing', function (type, CurrentTrack) {
                 },
                 assets:
                 {
-                    large_image: `defaultgenre`,
+                    large_image: genre.getGenreAssets(CurrentTrack.album, CurrentTrack.genre, CurrentTrack.artist),
                     large_text: `Made by justiceserv's MacOSDiscordRPC`,
                     small_image: `applemusic`,
                     small_text: 'https://jserv.xyz/',

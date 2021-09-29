@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@tbogard/itunes-search": "^1.2.6",
+    "auto-git-update": "^1.0.6",
     "discord-rich-presence": "^0.0.8",
     "itunes-bridge": "^0.6.7",
     "request": "^2.88.2",

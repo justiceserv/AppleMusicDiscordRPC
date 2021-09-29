@@ -2,6 +2,7 @@
   "dependencies": {
     "@tbogard/itunes-search": "^1.2.6",
     "auto-git-update": "^1.0.6",
+    "discord-rpc": "^4.0.1",
     "itunes-bridge": "^0.6.7",
     "searchitunes": "^2.5.1"
   },
@@ -9,7 +10,6 @@
   "version": "1.0.0",
   "description": "Discord RPC for Apple Music",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "node index.js"
   },

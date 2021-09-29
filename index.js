@@ -4,7 +4,13 @@ const { searchSong } = require('@tbogard/itunes-search');
 const iTunesEmitter = iTunes.emitter;
 let client = new RPC.Client({ transport: 'ipc' })
 client.login({ clientId: '891586647790075964' }).catch(console.error);
-iTunesEmitter.on('playing', function (CurrentTrack) {
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms)); 
+}
+
+iTunesEmitter.on('playing', function (type, CurrentTrack) {
+    console.log(CurrentTrack)
     searchSong(`${CurrentTrack.artist} - ${CurrentTrack.name}`).then((result) => {
         client.on('ready', () => { })
         client.request('SET_ACTIVITY', {
@@ -33,13 +39,13 @@ iTunesEmitter.on('playing', function (CurrentTrack) {
             }
         })
     })
-    console.log(CurrentTrack)
 })
-iTunesEmitter.on('paused', function () {
+iTunesEmitter.on('paused', function (type, CurrentTrack) {
     client.request('SET_ACTIVITY', { pid: process.pid });
     console.log(`${CurrentTrack.name} is stopped`)
 })
 iTunesEmitter.on('stopped', function () {
+    client.on('ready', ()=>{})
     client.request('SET_ACTIVITY', { pid: process.pid });
     console.log(`Apple Music is stopped.`)
 })

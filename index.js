@@ -2,14 +2,6 @@ const iTunes = require('itunes-bridge');
 const RPC = require('discord-rpc')
 const { searchSong } = require('@tbogard/itunes-search');
 const iTunesEmitter = iTunes.emitter;
-const { AutoGitUpdate } = require('auto-git-update');
-const config = {
-    repository: 'https://github.com/justiceserv/MacOSDiscordRPC', 
-    tempLocation: './tempupdate/'
-}
-const update = new AutoGitUpdate(config); 
-update.autoUpdate(); 
-
 let client = new RPC.Client({ transport: 'ipc' })
 client.login({ clientId: '891586647790075964' }).catch(console.error);
 iTunesEmitter.on('playing', function (CurrentTrack) {
@@ -28,9 +20,9 @@ iTunesEmitter.on('playing', function (CurrentTrack) {
                 assets:
                 {
                     large_image: `defaultgenre`,
-                    large_text: 'test',
+                    large_text: `Made by justiceserv's MacOSDiscordRPC`,
                     small_image: `applemusic`,
-                    small_text: 'test',
+                    small_text: 'https://jserv.xyz/',
 
                 },
                 buttons: [

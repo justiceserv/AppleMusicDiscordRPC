@@ -23,6 +23,8 @@ exports.getGenreAssets = function (album, genreinput, artist) {
                     return 'im'
                 case 'Growing up':
                     return 'growingup'
+                case 'A Flower Bookmark, Pt. 2 - EP': 
+                    return 'iuflowerep2'
                 default: 
                     return switchGenre(temp); 
             }
@@ -43,6 +45,36 @@ function switchGenre(genreinput) {
             return 'popgenre'; 
         case 'rock':
             return 'rockgenre'; 
+        case 'alternative':
+            return 'alternativegenre'
+        case 'blues': 
+            return 'bluesgenre'
+        case `children's music`: 
+            return 'kidsgenre';
+        case 'christian': 
+            return 'christiangenre'; 
+        case 'classical':
+            return 'classicalgenre'; 
+        case 'comedy': 
+            return 'comedygenre'; 
+        case 'country':
+            return 'countrygenre'; 
+        case 'dance': 
+            return 'dancegenre'; 
+        case 'electronic': 
+            return 'electronicgenre'
+        case 'hip-hop/rap':
+            return 'hiphopgenre'
+        case 'latin':
+            return 'latingenre'
+        case 'metal':
+            return 'metalgenre'
+        case 'r&b/soul':
+            return 'hiphopgenre'
+        case 'reggae':
+            return 'reggaegenre'
+        case 'worldwide':
+            return 'wwgenre'
         default:
             return 'defaultgenre';
     }

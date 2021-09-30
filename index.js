@@ -27,6 +27,7 @@ iTunesEmitter.on('playing', function (type, CurrentTrack) {
                 assets:
                 {
                     large_image: genre.getGenreAssets(CurrentTrack.album, CurrentTrack.genre, CurrentTrack.artist),
+                    //you can change this, but please give me some credit for this!
                     large_text: `Made by justiceserv's MacOSDiscordRPC`,
                     small_image: `applemusic`,
                     small_text: 'https://jserv.xyz/',

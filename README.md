@@ -8,6 +8,10 @@
 
 **This program is made to give similar experience to apple music users compared to spotify.**
 
+## Requirements 
+- node.js (v8 or newer, mac users can ignore this, script will auto install.)
+- npm 
+- Obviously, iTunes or Apple Music
 ## Preview 
 <image src="./images/preview2.png" width="25%">
 <image src="./images/preview.png" width="60%">
@@ -20,4 +24,11 @@
 - Automatic script for macOS, just run ```sh macos.sh``` in program's directory. <br>(It will install all dependencies needed!)
 - Special love to **IU**, all album covers will be displayed only for IU's music! (WIP)
 
-**Unfortunately, ```windows.bat``` will not automatically install nodejs, but only lead you to installing website.**
+**Unfortunately, ```windows.bat``` will not automatically install nodejs, but only lead you to installing website. After installing nodejs, everything will be automatic.**
+
+## Used Packages 
+- discord-rpc 
+- itunes-bridge 
+- @tbogard/itunes-search
+  
+:heart: to all open source contributors, this program will not exist without them. 

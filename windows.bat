@@ -7,29 +7,27 @@ IF %ERRORLEVEL% NEQ 0 (
 	exit
 )
 
-set NODE_VER=null
-set NODE_EXEC=node-v0.8.11-x86.msi
-set SETUP_DIR=%CD%
-node -v >tmp.txt
-set /p NODE_VER=<tmp.txt
-del tmp.txt
-IF %NODE_VER% NEQ null (
-	echo INSTALLING node ...
-	mkdir tmp
-	IF NOT EXIST tmp/%NODE_EXEC% (
-		echo Node setup file does not exist. Downloading ...
-		cd ../bin
-		START /WAIT wget http://nodejs.org/dist/v0.8.11/%NODE_EXEC%
-		move %NODE_EXEC% %SETUP_DIR%/tmp
-	)
-	cd %SETUP_DIR%/tmp
-	START /WAIT %NODE_EXEC%
-	cd %SETUP_DIR%
-) ELSE (
-	echo Node is already installed. Proceeding ...
-)
+set NULL_VAL=null
+set NODE_VER=%NULL_VAL%
+set NODE_EXEC=node-v10.15.3-x86.msi
 
-cd ../..
+node -v >.tmp_nodever
+set /p NODE_VER=<.tmp_nodever
+del .tmp_nodever
+
+IF "%NODE_VER%"=="%NULL_VAL%" (
+	echo.
+	echo Node.js is not installed! Please press a key to download and install it from the website that will open.
+	PAUSE
+	start "" http://nodejs.org/dist/v10.15.3/%NODE_EXEC%
+	echo.
+	echo.
+	echo After you have installed Node.js, press a key to shut down this process. Please restart it again afterwards.
+	PAUSE
+	EXIT
+) ELSE (
+	echo A version of Node.js ^(%NODE_VER%^) is installed. Proceeding...
+)
 call npm i
-call npm start
-echo DONE!
+call node index.js
+pause

@@ -1,0 +1,22 @@
+{
+    "jazz" : "jazzgenre", 
+    "soundtrack" : "soundtrackgenre", 
+    "k-pop": "kpopgenre", 
+    "pop" : "popgenre", 
+    "rock" : "rockgenre", 
+    "alternative" : "alternativegenre", 
+    "blues" : "bluesgenre", 
+    "children's music" : "kidsgenre", 
+    "christian" : "christiangenre", 
+    "classical" : "classicalgenre", 
+    "comedy" : "comedygenre", 
+    "country" : "countrygenre", 
+    "dance" : "dancegenre", 
+    "electronic" : "electronicgenre", 
+    "hip-hop/rap" : "hiphopgenre", 
+    "latin" : "latingenre", 
+    "metal" : "metalgenre", 
+    "r&b/soul" : "hiphopgenre", 
+    "reggae": "reggaegenre", 
+    "worldwide" : "wwgenre"
+}

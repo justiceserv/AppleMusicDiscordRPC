@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/justiceserv/MacOSDiscordRPC/issues"
   },
-  "homepage": "https://github.com/justiceserv/MacOSDiscordRPC#readme"
+  "homepage": "https://github.com/justiceserv/MacOSDiscordRPC#readme", 
+  "scripts": {"start": "node index.js"}
 }

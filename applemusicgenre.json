@@ -1,0 +1,222 @@
+{
+    "data": [
+        {
+            "id": "34",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/34",
+            "attributes": {
+                "name": "Music"
+            }
+        },
+        {
+            "id": "20",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/20",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Alternative"
+            }
+        },
+        {
+            "id": "2",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/2",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Blues"
+            }
+        },
+        {
+            "id": "4",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/4",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Children's Music"
+            }
+        },
+        {
+            "id": "22",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/22",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Christian"
+            }
+        },
+        {
+            "id": "5",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/5",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Classical"
+            }
+        },
+        {
+            "id": "3",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/3",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Comedy"
+            }
+        },
+        {
+            "id": "6",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/6",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Country"
+            }
+        },
+        {
+            "id": "17",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/17",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Dance"
+            }
+        },
+        {
+            "id": "7",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/7",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Electronic"
+            }
+        },
+        {
+            "id": "18",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/18",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Hip-Hop/Rap"
+            }
+        },
+        {
+            "id": "11",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/11",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Jazz"
+            }
+        },
+        {
+            "id": "51",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/51",
+            "attributes": {
+                "parentName": "Pop",
+                "parentId": "14",
+                "name": "K-Pop"
+            }
+        },
+        {
+            "id": "12",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/12",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Latin"
+            }
+        },
+        {
+            "id": "1153",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/1153",
+            "attributes": {
+                "parentName": "Rock",
+                "parentId": "21",
+                "name": "Metal"
+            }
+        },
+        {
+            "id": "14",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/14",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Pop"
+            }
+        },
+        {
+            "id": "15",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/15",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "R&B/Soul"
+            }
+        },
+        {
+            "id": "24",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/24",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Reggae"
+            }
+        },
+        {
+            "id": "21",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/21",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Rock"
+            }
+        },
+        {
+            "id": "10",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/10",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Singer/Songwriter"
+            }
+        },
+        {
+            "id": "16",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/16",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Soundtrack"
+            }
+        },
+        {
+            "id": "19",
+            "type": "genres",
+            "href": "/v1/catalog/us/genres/19",
+            "attributes": {
+                "parentName": "Music",
+                "parentId": "34",
+                "name": "Worldwide"
+            }
+        }
+    ]
+}

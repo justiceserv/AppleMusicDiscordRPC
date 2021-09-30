@@ -27,8 +27,12 @@
 **Unfortunately, ```windows.bat``` will not automatically install nodejs, but only lead you to installing website. After installing nodejs, everything will be automatic.**
 
 ## Used Packages 
-- discord-rpc 
-- itunes-bridge 
-- @tbogard/itunes-search
-  
+- [discord-rpc](https://www.npmjs.com/package/discord-rpc)
+- [itunes-bridge](https://www.npmjs.com/package/itunes-bridgei)
+- [@tbogard/itunes-search](https://www.npmjs.com/package/@tbogard/itunes-search)
+
 :heart: to all open source contributors, this program will not exist without them. 
+
+Special thanks to: [sboh1214](https://github.com/sboh1214) for providing full list of genre from apple music! <br>**(APPLE U SUCK, give students way to get developer token.)**
+
+### + I added full list of apple music genre as json, in case you need it!

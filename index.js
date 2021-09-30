@@ -6,20 +6,16 @@ const iTunesEmitter = iTunes.emitter;
 let client = new RPC.Client({ transport: 'ipc' })
 client.login({ clientId: '891586647790075964' }).catch(console.error);
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
 iTunesEmitter.on('playing', function (type, CurrentTrack) {
     console.log(CurrentTrack)
-    searchSong(`${CurrentTrack.artist} - ${CurrentTrack.name}`).then((result) => {
+    if (!CurrentTrack.artist || !CurrentTrack.album) {
         client.on('ready', () => { })
         client.request('SET_ACTIVITY', {
             pid: process.pid,
             activity:
             {
                 details: `Playing ${CurrentTrack.name}`,
-                state: `Album: ${CurrentTrack.album}`,
+                state: `Album: Unknown`,
                 timestamps:
                 {
                     end: Date.now() + CurrentTrack.remainingTime * 1000 + 1,
@@ -35,40 +31,71 @@ iTunesEmitter.on('playing', function (type, CurrentTrack) {
                 },
                 buttons: [
                     {
-                        label: 'Listen On Apple Music', url: `${result.results[0].trackViewUrl}`
+                        label: 'Unable On Apple Music', url: `https://localhost/`
                     },
                 ]
             }
         })
-    }).catch(error => {
-        client.on('ready', () => { })
-        client.request('SET_ACTIVITY', {
-            pid: process.pid,
-            activity:
-            {
-                details: `Playing ${CurrentTrack.name}`,
-                state: `Album: ${CurrentTrack.album}`,
-                timestamps:
+    }
+    else {
+        searchSong(`${CurrentTrack.artist} - ${CurrentTrack.name}`).then((result) => {
+            client.on('ready', () => { })
+            client.request('SET_ACTIVITY', {
+                pid: process.pid,
+                activity:
                 {
-                    end: Date.now() + CurrentTrack.remainingTime * 1000 + 1,
-                },
-                assets:
-                {
-                    large_image: genre.getGenreAssets(CurrentTrack.album, CurrentTrack.genre, CurrentTrack.artist),
-                    //you can change this, but please give me some credit for this!
-                    large_text: `Made by justiceserv's MacOSDiscordRPC`,
-                    small_image: `applemusic`,
-                    small_text: 'https://jserv.xyz/',
-
-                },
-                buttons: [
+                    details: `Playing ${CurrentTrack.name}`,
+                    state: `Album: ${CurrentTrack.album}`,
+                    timestamps:
                     {
-                        label: 'Unable On Apple Music', url: ``
+                        end: Date.now() + CurrentTrack.remainingTime * 1000 + 1,
                     },
-                ]
-            }
+                    assets:
+                    {
+                        large_image: genre.getGenreAssets(CurrentTrack.album, CurrentTrack.genre, CurrentTrack.artist),
+                        //you can change this, but please give me some credit for this!
+                        large_text: `Made by justiceserv's MacOSDiscordRPC`,
+                        small_image: `applemusic`,
+                        small_text: 'https://jserv.xyz/',
+
+                    },
+                    buttons: [
+                        {
+                            label: 'Listen On Apple Music', url: `${result.results[0].trackViewUrl}`
+                        },
+                    ]
+                }
+            })
+        }).catch(error => {
+            client.on('ready', () => { })
+            client.request('SET_ACTIVITY', {
+                pid: process.pid,
+                activity:
+                {
+                    details: `Playing ${CurrentTrack.name}`,
+                    state: `Album: ${CurrentTrack.album}`,
+                    timestamps:
+                    {
+                        end: Date.now() + CurrentTrack.remainingTime * 1000 + 1,
+                    },
+                    assets:
+                    {
+                        large_image: genre.getGenreAssets(CurrentTrack.album, CurrentTrack.genre, CurrentTrack.artist),
+                        //you can change this, but please give me some credit for this!
+                        large_text: `Made by justiceserv's MacOSDiscordRPC`,
+                        small_image: `applemusic`,
+                        small_text: 'https://jserv.xyz/',
+
+                    },
+                    buttons: [
+                        {
+                            label: 'Unable On Apple Music', url: ``
+                        },
+                    ]
+                }
+            })
         })
-    })
+    }
 })
 iTunesEmitter.on('paused', function (type, CurrentTrack) {
     client.request('SET_ACTIVITY', { pid: process.pid });

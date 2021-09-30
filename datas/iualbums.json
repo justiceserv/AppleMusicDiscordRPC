@@ -21,7 +21,7 @@
     "Through the Night - Single": "iuttn",
     "Heart - Single" : "iuheart",
     "SOGYEOKDONG - Single" : "iusog", 
-    "Modern Times - Epilogue" : "iumtep", 
+    "Modern Times – Epilogue" : "iumtep", 
     "Monday Afternoon - EP" : "iuma", 
     "Can You Hear Me? - EP" : "iucan", 
     "You & I (Japanese Version) - Single" : "iuyouijp",
@@ -31,5 +31,7 @@
     "Real+ - Single" : "iuplus", 
     "It's You - Single" : "iuitsyou", 
     "Nitpicking - Single" : "iunit", 
-    "Telecinema Project, Vol. 6 - Five Finger - Single" : "iufive"
+    "Telecinema Project, Vol. 6 - Five Finger - Single" : "iufive",
+    "Love Poem - Single" : "iulovepoemsingle", 
+    "Autumn Morning - Single" : "iuautumnmorning"
 }

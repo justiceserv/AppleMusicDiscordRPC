@@ -18,6 +18,10 @@ function switchGenre(genreinput) {
             return 'soundtrackgenre';
         case 'k-pop':
             return 'kpopgenre';
+        case 'pop':
+            return 'popgenre'; 
+        case 'rock':
+            return 'rockgenre'; 
         default:
             return 'defaultgenre';
     }

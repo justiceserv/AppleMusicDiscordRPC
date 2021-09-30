@@ -1,3 +1,6 @@
-This project is currently WIP. 
+<p align="center">
+    <img src="./image/../images/새%20프로젝트-2.png">
+<p>
 
-Please do not use it until this README is changed to something formal. 
+# Apple Music Discord Presence
+- *Note: This project is still WIP, but stable. More functions will be added.* 

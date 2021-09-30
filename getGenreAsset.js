@@ -14,7 +14,7 @@ function switchGenre(genreinput) {
     switch (genreinput) {
         case 'jazz':
             return 'jazzgenre';
-        case 'Soundtrack':
+        case 'soundtrack':
             return 'soundtrackgenre';
         case 'k-pop':
             return 'kpopgenre';

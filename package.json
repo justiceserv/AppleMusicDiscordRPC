@@ -10,7 +10,7 @@
   "description": "Discord RPC for Apple Music",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,5 @@
   "bugs": {
     "url": "https://github.com/justiceserv/MacOSDiscordRPC/issues"
   },
-  "homepage": "https://github.com/justiceserv/MacOSDiscordRPC#readme", 
-  "scripts": {"start": "node index.js"}
+  "homepage": "https://github.com/justiceserv/MacOSDiscordRPC#readme"
 }

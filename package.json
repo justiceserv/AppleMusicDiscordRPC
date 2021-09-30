@@ -6,7 +6,8 @@
   "dependencies": {
     "discord-rpc": "^4.0.1",
     "itunes-bridge": "^0.6.7",
-    "searchitunes": "^2.5.1"
+    "searchitunes": "^2.5.1",
+    "@tbogard/itunes-search": "^1.2.6"
   },
   "devDependencies": {},
   "scripts": {

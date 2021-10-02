@@ -34,3 +34,5 @@
 Special thanks to: [sboh1214](https://github.com/sboh1214) for providing full list of genre from apple music! <br>**(APPLE U SUCK, give students way to get developer token.)**
 
 ### + I added full list of apple music genre as json, in case you need it!
+
+**This project should be opened after discord is started. I am developing another project to give more spotify-like experience. [Check Here](https://github.com/justiceserv/AppleMusicRPCEverywhere)**

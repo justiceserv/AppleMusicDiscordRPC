@@ -14,7 +14,7 @@
 <image src="./images/preview2.png" width="25%">
 <image src="./images/preview.png" width="60%">
 
-## Functions
+## Features
 
 - Changes album graphic according to genre. (90% accurate.)  
 (If metadata of song is not given, presence will display default picture.)

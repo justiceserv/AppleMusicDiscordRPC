@@ -1,6 +1,6 @@
 {
   "name": "applemusicdiscordrpc",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "bin": "./index.js",
   "description": "Apple Music Discord Rich Presence Program",
   "main": "index.js",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const iTunes = require('itunes-bridge');
 const RPC = require('discord-rpc')
 const { searchSong } = require('@tbogard/itunes-search');

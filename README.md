@@ -14,6 +14,11 @@
 <image src="./images/preview2.png" width="25%">
 <image src="./images/preview.png" width="60%">
 
+## Usage
+
+* Install globally: `npm install -g applemusicdiscordpresence`
+* Run in a shell: `applemusicdiscordpresence`
+
 ## Features
 
 - Changes album graphic according to genre. (90% accurate.)  
@@ -21,8 +26,6 @@
 - Displays your song name and album.
 - “Listen On Apple Music” will take you to Apple Music URL of your currently playing music.  (This only works when the song is available in Apple Music, US Storefront.)
 - Displays how much time is left for your song to end.
-- Automatic script for macOS, just run `sh macos.sh` (or `sh macosscreen.sh` if you have `screen` installed) in program's directory.  
-(It will install all dependencies needed!)
 - Special love to **IU**, all album covers will be displayed only for IU’s music!
 
 **Unfortunately, `windows.bat` will not automatically install Node.js, but only lead you to installing website. After installing Node.js, everything will be automatic.**

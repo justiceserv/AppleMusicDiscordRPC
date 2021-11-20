@@ -16,7 +16,7 @@
 
 ## Usage
 
-* Install globally: `npm install -g applemusicdiscordpresence`
+* Install globally: `npm i -g applemusicdiscordrpc`
 * Run in a shell: `applemusicdiscordpresence`
 
 ## Features
